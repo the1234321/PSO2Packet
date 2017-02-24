@@ -31,22 +31,29 @@ packet:
         count: 16        
     - flags:
         type: Enum
-        enum: #TODO
-            JustAttack: 0x1
-                description: Just attack
-            Unknown: 0x2 
-                description: Unknown
-            Misc: 0x4
-                description: Healing, lava, etc... all use this
-            Damage: 0x8
-                description: If damaging
-            MultiHit: 0x10
-                description: MultiHit, One Point and Infinite Fire use this
-            Misc2: 0x20
-                description: Zanverse uses this
-            Crit: 0x40
-                description: If this is a crit
         size: 1
+        enum: #TODO
+            - name: JustAttack
+              value: 0x01
+              description: Just attack
+            - name: Unknown
+              value: 0x02
+              description: Unknown
+            - name: Misc
+              value: 0x04
+              description: Healing, lava, etc... all use this
+            - name: Damage
+              value: 0x08
+              description: If damaging attack
+            - name: MultiHit
+              value: 0x10
+              description:  MultiHit, One Point and Infinite Fire use this
+            - name: Misc2
+              value: 0x20
+              description: Zanverse uses this
+            - name: Crit
+              value: 0x40
+              description: If this is a crit
         description: Bitfield, TODO
     - Unknown5: #TODO
         type: Byte[]
