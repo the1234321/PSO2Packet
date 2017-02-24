@@ -6,7 +6,7 @@ packets:
       source       : server
       packet       : "Packets/PSO2PacketDamage.yml"
       description  : Damage Info Packet (External sources)
-      
+
     - type         : 0x04
       subtype      : 0x52
       source       : server
