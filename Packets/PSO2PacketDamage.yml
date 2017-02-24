@@ -27,9 +27,9 @@ packet:
         type: Byte[16]       
     - flags:
         type:
-            name: Enum
+            name: Bitfield
             size: 1
-            values: #TODO
+            masks: #TODO
                 - name: JustAttack
                   value: 0x01
                   description: Just attack
@@ -51,6 +51,6 @@ packet:
                 - name: Crit
                   value: 0x40
                   description: If this is a crit
-        description: Bitfield, TODO
+        description: Bitfield for flags related to damage
     - Unknown5: #TODO
         type: Byte[11]
