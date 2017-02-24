@@ -9,6 +9,5 @@ packet:
         type: Byte
         description: Packet subtype
     - Flags: #TODO
-        type: Byte[]
-        count: 2
+        type: Byte[2]
         description: Bitfield, second byte might just be padding

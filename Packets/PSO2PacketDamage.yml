@@ -3,14 +3,12 @@ packet:
         type: UInt32
         description: Active user account ID (ARKS ID)
     - Unknown1: #TODO
-        type: Byte[]
-        count: 8
+        type: Byte[8]
     - TargetID:
          type: UInt32
          description: Target ID of action target
     - Unknown2: #TODO
-        type: Byte[]
-        count: 6
+        type: Byte[6]
     - InstanceID:
         type: UInt32
         description: Current instance ID
@@ -18,8 +16,7 @@ packet:
         type: UInt32
         description: ID of action user
     - Unknown3: #TODO
-        type: Byte[]
-        count: 8
+        type: Byte[8]
     - AnimationID:
         type: UInt32
         description: ID of action     
@@ -27,11 +24,11 @@ packet:
         type: Int32
         description: Amount of damage or healing, can be negative or positive     
     - Unknown4: #TODO
-        type: Byte[]
-        count: 16        
+        type: Byte[16]       
     - flags:
-        type: Enum
-        size: 1
+        type:
+            name: Enum
+            size: 1
         enum: #TODO
             - name: JustAttack
               value: 0x01
@@ -56,5 +53,4 @@ packet:
               description: If this is a crit
         description: Bitfield, TODO
     - Unknown5: #TODO
-        type: Byte[]
-        count: 11              
+        type: Byte[11]
