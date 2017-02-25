@@ -1,0 +1,12 @@
+language: python
+sudo: required
+
+install:
+  - sudo pip install yamllint
+
+matrix:
+    include:
+        - os: linux
+          dist: trusty
+script:
+  - yamllint -s -c yamllint.conf Packets.yml Packets/*.yml

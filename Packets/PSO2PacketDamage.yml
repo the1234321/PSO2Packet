@@ -19,12 +19,12 @@ packet:
         type: Byte[8]
     - AnimationID:
         type: UInt32
-        description: ID of action     
+        description: ID of action
     - Value:
         type: Int32
-        description: Amount of damage or healing, can be negative or positive     
+        description: Amount of damage or healing, can be negative or positive
     - Unknown4: #TODO
-        type: Byte[16]       
+        type: Byte[16]
     - flags:
         type:
             name: Bitfield
@@ -44,7 +44,7 @@ packet:
                   description: If damaging attack
                 - name: MultiHit
                   value: 0x10
-                  description:  MultiHit, One Point and Infinite Fire use this
+                  description: MultiHit, One Point and Infinite Fire use this
                 - name: Misc2
                   value: 0x20
                   description: Zanverse uses this
